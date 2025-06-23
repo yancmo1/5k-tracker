@@ -36,11 +36,12 @@ fi
 # Check SSL certificate
 echo ""
 echo "4. Checking SSL certificate..."
-if [ -f "/etc/ssl/cloudflare/*.crt" ] || [ -f "/etc/ssl/cloudflare/*.pem" ]; then
+if [ -f "/etc/ssl/cloudflare/yancmo.xyz.crt" ] && [ -f "/etc/ssl/cloudflare/yancmo.xyz.key" ]; then
     echo "✅ SSL certificates found in /etc/ssl/cloudflare/"
     ls -la /etc/ssl/cloudflare/
 else
-    echo "❌ No SSL certificates found in /etc/ssl/cloudflare/"
+    echo "❌ SSL certificates not found in /etc/ssl/cloudflare/"
+    echo "   Expected: yancmo.xyz.crt and yancmo.xyz.key"
 fi
 
 # Test local connections
