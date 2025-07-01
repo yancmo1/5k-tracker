@@ -5,7 +5,7 @@
 - **Public Domain**: `www.yancmo.xyz`
 - **App**: Race Tracker on port 5011
 
-## Step 1: Check Your Certificate Files
+## Step 1: Check  Your Certificate Files
 ```bash
 # On your Pi, check what cert files you have
 ls -la /etc/ssl/cloudflare/
